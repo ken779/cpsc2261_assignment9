@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+<meta charset="utf-8">
+<title>Auto Summing Table</title>
+<!--need to defer scripts for some reason
+otherwise querying the DOM will return null !-->
+<script src="component.js" defer></script>
+<link rel="stylesheet" type="text/css" href="component.css" />
+</head>
+<body>
+    <h1>Auto Summing table</h1>
+    <receipt-table tax="0.05" col="Unit Price">
+        <table>
+            <tr>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Unit Price</th>
+                <th>cost</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Norwegian aligator clips</td>
+                <td>2.00</td>
+                <td>2.00</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Dragon</td>
+                <td>7.00</td>
+                <td>35.00</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Subway</td>
+                <td>7.00</td>
+                <td>7.00</td>
+            </tr>
+        </table>
+    </receipt-table>
+</body>
+</html>
